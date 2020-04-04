@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List-Keep your work up to date</title>
+    <link rel="stylesheet" href="./css/maintodo.css">
+    <link rel="stylesheet" href="./css/todostyle.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <!--NAVBAR STARTS -->
+    <header>
+        <nav class="navbar">
+            <div class="left-navbar">
+                <div class="fa fa-align-justify" id="mobile-nav">
+                </div>
+                <div class="search-bar">
+                    <input type="text" name="box" placeholder="Quick find" id="nav-search">
+                    <div class="btn-search">
+                        <a href="#"><i class="fa fa-search" id="btn-btn"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="setting">
+                    <div class="fa fa-cog" id="cog">
+                        <div class="setting-content">
+                            <a href="#"><i class="fa fa-search" id="sc"></i>Sync</a>
+                            <a href="#"><i class="fa fa-cog" id="sc"></i>Setting</a>
+                            <a href="#"><i class="fa fa-paint-brush" id="sc"></i>Theme</a>
+                            <a href="#"><i class="fa fa-signal" id="sc"></i>View activity log</a>
+                            <a href="#"><i class="fa fa-print" id="sc"></i>Print</a><hr id="hline">
+                            <a href="#"><i class="fa fa-question-circle" id="sc"></i>Support</a>
+                            <a href="#"><i class="fa fa-sticky-note" id="sc"></i>Templates</a>
+                            <a href="#"><i class="fa fa-edit" id="sc"></i>Blog</a>
+                            <a href="#"><i class="fa fa-laptop" id="sc"></i>Keyboard shortcut</a>
+                            <a href="#"><i class="fa fa-bolt" id="sc"></i>What's new</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--NAVBAR ENDS-->
+    <!--SIDEBAR STARTS HAVING MENU-->
+ 
+
+    <div class="sidebar" id="side">
+        
+        <ul>
+            <li><a href="#">
+                <span class="sidebar-icon">
+                    <i class="fa fa-inbox" style="color: #4bb0e1f2;padding-right: 10px;"></i>
+                </span>
+                <span class="title" style="color: black;">Inbox</span>
+            </a></li>
+            <li><a href="#">
+                <span class="sidebar-icon">
+                    <i class="fa fa-calendar" style="color:#ff0000b8;padding-right: 10px"></i>
+                </span>
+                <span class="title" style="color: black; font-weight: 600;">Today</span>
+            </a></li>
+            <li><a href="#">
+                <span class="sidebar-icon">
+                    <i class="fa fa-check-circle" style="color: #4bb0e1f2;padding-right: 10px"></i>
+                </span>
+                <span class="title" style="color: black;">Next 7 Days</span>
+            </a></li>
+            <li>
+                <a href="#" id="project-dropdown">
+                    
+                    <span class="sidebar-icon" style="margin-left: 7;">
+                        <i class="fa fa-angle-right" style="padding-right: 10px"></i>
+                    </span>
+                    <span class="title" style="color: black;font-weight: 600;">Projects</span>
+                    <span class="fa fa-plus" id="hoverr1"></span>
+                    <ul id="project-content" style="display: none;">
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-circle" id="circle">Welcome<span class="fa fa-hand-peace-o" id="hand-peace"></span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-plus" id="plus-icon">Add Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$">
+                                <p class="archived">Archived Project</p>
+                            </a>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="#" id="hoverr3">
+                <span class="sidebar-icon" style="margin-left: 7;">
+                    <i class="fa fa-angle-right" style="padding-right: 10px"></i>
+                </span>
+                <span class="title" style="color: black;font-weight: 600;">Labels</span>
+                <span class="fa fa-plus" id="hoverr"></span>
+            </a></li>
+            <li>
+                <a href="#" id="fliter-dropdown">
+                    <span class="sidebar-icon" style="margin-left: 7;">
+                        <i class="fa fa-angle-right" style="padding-right: 10px"></i>
+                    </span>
+                    <span class="title" style="color: black;font-weight: 600;">Filters</span>
+                    <span class="fa fa-plus" id="hoverr2"></span>
+                    <ul id="filter-content" style="display: none;">
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-tint" id="me">Assigned to me</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-tint" id="others">Assigned to others</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-tint" id="priority1">Priority 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-tint" id="priority2" >Priority 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-tint" id="priority3">Priority 3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$">
+                                <span class="fa fa-tint" id="priority4">Priority 4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+                 
+        </ul>
+    </div>
+    <!--SIDEBAR ENDS-->
+    <!--TODO LIST ITMES STARTS-->
+    <div class="main-todo">
+        <div class="all-tasks">
+            <h2 class="task-list-title">My lists</h2>
+            <ul class="task-list" data-lists>
+                <!--here come li part-->
+            </ul>
+      
+            <form action="" data-new-list-form>
+              <input 
+                type="text"
+                class="new list"
+                data-new-list-input
+                placeholder="new list name"
+                aria-label="new list name"
+              />
+              <button class="btn create" aria-label="create new list">+</button>
+            </form>
+          </div>
+      
+          <div class="todo-list" data-list-display-container>
+            <div class="todo-header">
+              <h2 class="list-title" data-list-title>YouTube</h2>
+              <p class="task-count" data-list-count>3 tasks remaining</p>
+            </div>
+      
+            <div class="todo-body">
+              <div class="tasks" data-tasks></div>
+      
+              <div class="new-task-creator">
+                  <form action="" data-new-task-form>
+                      <input 
+                        type="text"
+                        data-new-task-input
+                        class="new task"
+                        placeholder="new task name"
+                        aria-label="new task name"
+                      />
+                      <button class="btn create" aria-label="create new task">+</button>
+                    </form>
+              </div>
+      
+              <div class="delete-stuff">
+                <button class="btn delete" data-clear-complete-tasks-button>Clear completed tasks</button>
+                <button class="btn delete" data-delete-list-button>Delete list</button>
+              </div>
+            </div>
+          </div>
+      
+         
+          </div>
+          <template id="task-template">
+            <div class="task">
+              <input type="checkbox" />
+              <label>
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+          </template>
+    </div>
+    <!--TODO MAIN BODY TASK ENDS-->
+    <!--END OF HTML-->
+    <script src="./js/project_drop.js"></script>
+    <script src="./js/filter_drop.js"></script>
+    <script src="./js/todo.js"></script>
+</div>
+</body>
+
+</html>
