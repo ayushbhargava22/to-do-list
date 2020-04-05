@@ -5,6 +5,7 @@
     <title>Todo List-Keep your work up to date</title>
     <link rel="stylesheet" href="./css/maintodo.css">
     <link rel="stylesheet" href="./css/todostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
@@ -25,7 +26,7 @@
             <div class="navbar-right">
                 <div class="setting">
                     <div class="fa fa-cog" id="cog">
-                        <div class="setting-content">
+                        <div class="setting-content" id="set">
                             <a href="#"><i class="fa fa-search" id="sc"></i>Sync</a>
                             <a href="#"><i class="fa fa-cog" id="sc"></i>Setting</a>
                             <a href="#"><i class="fa fa-paint-brush" id="sc"></i>Theme</a>
@@ -36,8 +37,27 @@
                             <a href="#"><i class="fa fa-edit" id="sc"></i>Blog</a>
                             <a href="#"><i class="fa fa-laptop" id="sc"></i>Keyboard shortcut</a>
                             <a href="#"><i class="fa fa-bolt" id="sc"></i>What's new</a>
+                            <hr>
+                            <a href="#"><i class="fa fa-sign-out" id="sc"></i>Log Out</a><hr>
+                            <p style="color: black;font-size: 12;color: #3a2f2fb8;margin-left: 10;">Apps</p>
+                            <div class="app-section">
+                                <a href="#"><i class="fa fa-android"></i></a>
+                                <a href="#"><i class="fa fa-apple"></i></a>
+                                <a href="#"><i class="fa fa-windows"></i></a>
+                                <a href="#"><i class="fa fa-desktop"></i></a>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="navbar-right2">
+                    <div class="fa fa-bell" id="bell">
+                        <div class="notification-content" id="not">
+                            <p style="color: black;">Notification</p>
+                
+
+                        </div>
+                    </div>
+        
                 </div>
             </div>
         </nav>
@@ -190,7 +210,7 @@
       
               <div class="delete-stuff">
                 <button class="btn delete" data-clear-complete-tasks-button>Clear completed tasks</button>
-                <button class="btn delete" data-delete-list-button>Delete list</button>
+                <button class="btn delete" id="del" data-delete-list-button>Delete list</button>
               </div>
             </div>
           </div>
@@ -211,6 +231,8 @@
     <script src="./js/project_drop.js"></script>
     <script src="./js/filter_drop.js"></script>
     <script src="./js/todo.js"></script>
+    <script src="./js/setting_drop.js"></script>
+    <script src="./js/notification.js"></script>
 </div>
 </body>
 
